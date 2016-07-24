@@ -1,0 +1,1 @@
+export const PROFILE_LOADED = 'PROFILE_LOADED';

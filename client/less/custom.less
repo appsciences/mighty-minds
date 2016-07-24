@@ -1,0 +1,91 @@
+@import "template/variables";
+@light-orange: lighten(@theme-primary, 39.5%);
+
+.students-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .student-card {
+    background-color: @light-orange;
+    border: 1px solid @gray-lighter;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: ~"calc(33% - 20px)";
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+
+    .student-card-photo {
+      width: 100%
+    }
+
+    .student-card-story {
+      color: @gray-light;
+      flex-grow: 1;
+      padding: 15px;
+    }
+
+    .read-more-link {
+      color: @theme-primary;
+      display: inline-block;
+      font-size: 1.1em;
+    }
+
+    .student-card-amount {
+      border-top: 1px solid @gray-lighter;
+      color: @gray-light;
+      font-size: 0.9em;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+
+.profile-story {
+  margin-top: 20px;
+  line-height: 2.5em;
+}
+
+.donate-button {
+  border: 1px solid @gray-lighter;
+  border-radius: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 3px 3px 30px;
+
+  .donate-input {
+    outline: 0;
+    border: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+.payment-credit-card {
+  font-weight: 200;
+  font-size: 1.1em;
+
+  .row {
+    border-bottom: 1px solid @gray-lighter;
+  }
+
+  input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+  }
+
+  .input-holder {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+}

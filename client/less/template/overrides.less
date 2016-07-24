@@ -1,0 +1,22 @@
+@import "variables";
+
+.navbar-default {
+  &.navbar-dark {
+    border-color: @gray-lighter;
+
+    .navbar-header .navbar-brand {
+      color: @theme-primary;
+      &:hover,
+      &:focus {
+        color: darken(@theme-primary, 10%);
+      }
+    }
+    .nav > li > a,
+    .nav > li > a:focus {
+      color: @theme-primary;
+      &:hover {
+        color: darken(@theme-primary, 10%);;
+      }
+    }
+  }
+}

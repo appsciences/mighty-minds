@@ -1,0 +1,39 @@
+{
+  "_id": "ALKSJD3423q=-ASD24234E",
+  "_adder": "ASLDOIO234232LKSDA-=",
+  "photo": "https://d3w52z135jkm97.cloudfront.net/uploads/profile/photo/8809/profile_638x479_6c4f1bbf-3aa9-474d-9a6d-2a422779f0c4.jpg",
+  "personalDetails": {
+    "_isPrivate": true,
+    "dateOfBirth": "ISODateSomething",
+    "maritalStatus": "single",
+    "sex": "regular",
+    "bloodType": "O+",
+    "height": "175",
+    "weight": "65",
+    "name": {
+      "title": "Mr.",
+      "firstName": "John",
+      "middleName": "L",
+      "lastName": "Doe",
+      "suffix": "Jr."
+    },
+    "address": {
+      "street1": "Samp Street 1",
+      "street2": "Samp Street 2",
+      "city": "SampCity",
+      "province": "Bulacan",
+      "country": "Philippines",
+      "postalCode": "2015"
+    },
+    "contactDetail": {
+      "commPreference": "homePhone",
+      "homePhone": "123456789",
+      "mobilePhone": "123456789",
+      "workPhone": "123456789",
+      "emergencyPhone": "123456789"
+    }
+  },
+  "school": "Sample School here",
+  "story": "This is his/her story Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad assumenda corporis cupiditate debitis dolor dolorem doloremque ea eaque earum eligendi error exercitationem expedita explicabo facilis harum illo, iure maiores minus nostrum odio perspiciatis provident repudiandae saepe sed sequi sit tempora unde veniam voluptatibus. Ab, aperiam aspernatur atque autem debitis dolore ducimus eius ex, exercitationem expedita explicabo, harum id ipsum laudantium nemo nisi odio odit optio quia saepe sequi sit temporibus veritatis vitae voluptas. Eligendi harum magni nostrum nulla voluptates. At dignissimos eligendi explicabo facere hic iste, iusto magnam maiores molestias neque numquam quisquam quos recusandae reprehenderit saepe voluptatem voluptates!",
+  "neededAmount": 3435366
+}
