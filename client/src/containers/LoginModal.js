@@ -5,13 +5,14 @@ import { connect } from 'react-redux';
 import { closeLoginModal } from '../actionCreators/modals';
 
 import Modal from '../components/shared/Modal';
+import LoginForm from '../components/LoginForm';
 
 const LoginModal = ({ show, closeLoginModal }) => (
   <div>
     {
       show &&
       <Modal title="Login" onClose={closeLoginModal}>
-        dasdas
+        <LoginForm />
       </Modal>
     }
   </div>

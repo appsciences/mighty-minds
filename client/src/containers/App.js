@@ -2,17 +2,19 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { openLoginModal } from '../actionCreators/modals';
+import { openLoginModal, openSignupModal } from '../actionCreators/modals';
 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import LoginModal from './LoginModal';
+import SignupModal from './SignupModal';
 
-const App = ({ children, overflowedNavBar, openLoginModal }) => (
+const App = ({ children, overflowedNavBar, openLoginModal, openSignupModal }) => (
   <div>
     <NavBar
       overflowed={overflowedNavBar}
       onLoginClick={openLoginModal}
+      onSignupClick={openSignupModal}
     />
     <div>
       {children}
@@ -21,6 +23,7 @@ const App = ({ children, overflowedNavBar, openLoginModal }) => (
 
     {/* Global modals */}
     <LoginModal />
+    <SignupModal />
   </div>
 );
 
@@ -34,7 +37,10 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ openLoginModal }, dispatch);
+  return bindActionCreators({
+    openLoginModal,
+    openSignupModal
+  }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

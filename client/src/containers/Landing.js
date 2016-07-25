@@ -1,5 +1,4 @@
 import React from 'react';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import Header from '../components/landing/Header';
@@ -8,7 +7,7 @@ import About from '../components/landing/About';
 import Students from '../components/landing/Students';
 import DonateNow from '../components/landing/DonateNow';
 
-const Landing = () => (
+const Landing = ({students}) => (
   <div>
     <Header />
 
@@ -16,11 +15,17 @@ const Landing = () => (
 
     <About />
 
-    <Students />
+    <Students students={students} />
 
     <DonateNow />
 
   </div>
 );
 
-export default connect()(Landing);
+const mapStateToProps = (state) => {
+  return {
+    students: state.studentsList.slice(0, 3)
+  };
+};
+
+export default connect(mapStateToProps)(Landing);

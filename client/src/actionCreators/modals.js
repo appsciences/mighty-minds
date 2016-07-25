@@ -16,3 +16,15 @@ export function closeLoginModal() {
     type: CLOSE_LOGIN_MODAL
   };
 }
+
+export function openSignupModal() {
+  return {
+    type: OPEN_SIGNUP_MODAL
+  };
+}
+
+export function closeSignupModal() {
+  return {
+    type: CLOSE_SIGNUP_MODAL
+  };
+}

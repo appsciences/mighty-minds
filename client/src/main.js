@@ -16,6 +16,8 @@ import Donation from './containers/Donation';
 
 import reducers from './reducers';
 
+import { loadStudentsList } from './actionCreators/students';
+
 const store = createStore(
   reducers,
   {},
@@ -26,6 +28,8 @@ const store = createStore(
 );
 
 const history = syncHistoryWithStore(hashHistory, store);
+
+store.dispatch(loadStudentsList());
 
 ReactDOM.render(
   <Provider store={store}>

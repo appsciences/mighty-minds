@@ -6,30 +6,15 @@ import { loadStudentsList } from '../actionCreators/students';
 
 import StudentsCardsList from '../components/students/StudentsCardsList';
 
-class SupportStudent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-    this.props.loadStudentsList();
-  }
-
-  render() {
-    const { students } = this.props;
-
-    return (
-      <div className="container">
-        <h2>Choose a student to support</h2>
-        <br />
-        <StudentsCardsList
-          students={students}
-          linkPrefix="/profile"
-        />
-      </div>
-    );
-  }
-}
+const SupportStudent = ({ students }) => (
+  <div className="container">
+    <h2>Choose a student to support</h2>
+    <br />
+    <StudentsCardsList
+      students={students}
+    />
+  </div>
+);
 
 const mapStateToProps = (state, ownProps) => {
   return {

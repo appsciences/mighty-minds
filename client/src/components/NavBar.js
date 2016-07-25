@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const NavBar = ({ overflowed, onLoginClick }) => {
+const NavBar = ({ overflowed, onLoginClick, onSignupClick }) => {
   const position = overflowed ? 'absolute' : 'static';
 
   return (
@@ -21,7 +21,7 @@ const NavBar = ({ overflowed, onLoginClick }) => {
               <a>About</a>
             </li>
             <li>
-              <a>Sign Up</a>
+              <a onClick={onSignupClick}>Sign Up</a>
             </li>
             <li>
               <a onClick={onLoginClick}>Login</a>

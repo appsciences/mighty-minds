@@ -4,7 +4,7 @@ const DonationForm = () => {
 
   return (
     <div>
-      <div className="payment-credit-card">
+      <div className="striped-form">
         <div className="row">
           <div className="input-holder col-md-12">
             <input type="text" placeholder="Your Full Name"/>
